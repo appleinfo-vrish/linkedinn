@@ -195,6 +195,7 @@ export default function App() {
     "Jane Smith": [{ from: "Jane Smith", text: "Congrats on your new job!" }, { from: "Vrishin", text: "Thank you Jane!" }],
     "Priya Agarwal": [{ from: "Priya Agarwal", text: "Check out my new article on UI/UX trends." }],
   });
+  const jobs = INITIAL_JOBS;
   const [network, setNetwork] = useState(INITIAL_NETWORK);
   const [notifications, setNotifications] = useState(INITIAL_NOTIFICATIONS);
   const [savedJobs, setSavedJobs] = useState(() => JSON.parse(localStorage.getItem("ln-saved-jobs")) || []);
